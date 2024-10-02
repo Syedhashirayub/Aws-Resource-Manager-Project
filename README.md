@@ -42,7 +42,7 @@ This project utilizes a shell script that runs in an AWS EC2 instance to list va
    ```bash
    chmod 700 aws_resource_tracker.sh
 
-### Script Explanation
+## Script Explanation
 
 The script performs the following tasks:
 
@@ -53,7 +53,7 @@ The script performs the following tasks:
  - List IAM Users: Lists all IAM users.
 Each section of the output is logged to a specified output file.
 
-### Setting Up a Cron Job
+## Setting Up a Cron Job
 
 To schedule the script to run at regular intervals, edit the crontab:
 
@@ -70,7 +70,7 @@ To schedule the script to run at regular intervals, edit the crontab:
  - >> /home/ec2-user/log/aws-resource-output.txt: Appends output to a log file.
  - 2>&1: Redirects error messages to the same log file.
 
-### IAM Role Configuration
+## IAM Role Configuration
 
 1. **Create an IAM Role**: Ensure that the EC2 instance has the necessary permissions to access AWS services.
 Policy names to attach:
@@ -84,7 +84,7 @@ Policy names to attach:
  - Click Actions → Security → Modify IAM role.
  - Select the IAM role you created (e.g., EC2-AWS-Resource-Tracker-Role) and click Update IAM role.
 
-### License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
