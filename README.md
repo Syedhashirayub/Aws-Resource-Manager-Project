@@ -70,7 +70,7 @@ To schedule the script to run at regular intervals, edit the crontab:
  - >> /home/ec2-user/log/aws-resource-output.txt: Appends output to a log file.
  - 2>&1: Redirects error messages to the same log file.
 
-*** IAM Role Configuration
+### IAM Role Configuration
 
 1. **Create an IAM Role**: Ensure that the EC2 instance has the necessary permissions to access AWS services.
 Policy names to attach:
