@@ -42,7 +42,7 @@ This project utilizes a shell script that runs in an AWS EC2 instance to list va
    ```bash
    chmod 700 aws_resource_tracker.sh
 
-###Script Explanation
+### Script Explanation
 
 The script performs the following tasks:
 
@@ -52,3 +52,30 @@ The script performs the following tasks:
  - List RDS Databases: Retrieves information about RDS databases.
  - List IAM Users: Lists all IAM users.
 Each section of the output is logged to a specified output file.
+
+### Setting Up a Cron Job
+
+To schedule the script to run at regular intervals, edit the crontab:
+
+1. **Edit the crontab**:
+   ```bash
+   crontab -e
+2. **Add the following line to schedule the script**:
+   ```bash
+   * * * * * /home/ec2-user/aws-resource-tracker.sh >> /home/ec2-user/log/aws-resource-output.txt 2>&1
+
+### Cron Job Breakdown:
+ - * * * * *: Runs every minute.
+ - /home/ec2-user/aws-resource-tracker.sh: Path to the script.
+ - >> /home/ec2-user/log/aws-resource-output.txt: Appends output to a log file.
+ - 2>&1: Redirects error messages to the same log file.
+
+
+
+
+
+
+
+
+
+
