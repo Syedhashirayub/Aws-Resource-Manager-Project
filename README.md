@@ -31,11 +31,14 @@ This project utilizes a shell script that runs in an AWS EC2 instance to list va
    pwd
    # Ouput should be /home/ec2-user
 2. **Create the Shell Script: Open the script in Vim**:
-   '''bash
+   ```bash
    vim aws_resource_tracker.sh
+   
 -Press i to enter insert mode.
 -Paste the script contents.
 -Press Esc, then type :wq to save and exit.
-3. **Set Execute Permissions**:
-   '''bash
+4. **Set Execute Permissions**:
+   ```bash
    chmod 700 aws_resource_tracker.sh
+
+###Script Explanation
