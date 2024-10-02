@@ -37,8 +37,18 @@ This project utilizes a shell script that runs in an AWS EC2 instance to list va
   -Press i to enter insert mode.
   -Paste the script contents.
   -Press Esc, then type :wq to save and exit.
-4. **Set Execute Permissions**:
+  
+3. **Set Execute Permissions**:
    ```bash
    chmod 700 aws_resource_tracker.sh
 
 ###Script Explanation
+
+The script performs the following tasks:
+
+-Clear Output File: Clears any previous data.
+-List EC2 Instances: Uses AWS CLI to fetch EC2 instance details.
+-List S3 Buckets: Fetches available S3 buckets.
+-List RDS Databases: Retrieves information about RDS databases.
+-List IAM Users: Lists all IAM users.
+Each section of the output is logged to a specified output file.
