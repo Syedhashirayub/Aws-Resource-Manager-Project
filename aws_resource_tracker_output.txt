@@ -1,0 +1,39 @@
+
+🛠 AWS Resource Tracker 🛠
+==========================
+
+🔍 Listing EC2 Instances...
+-----------------------------------------
+|         DescribeInstances             |
++-------------------+-----------+-------+
+| InstanceId        | i-01234567        |
+| InstanceType      | t2.micro          |
+| State             | running           |
+| PublicIpAddress   | 3.84.125.254      |
+-----------------------------------------
+
+🔍 Listing S3 Buckets...
+2023-09-30 22:15:43 my-s3-bucket-1
+2024-01-05 09:12:25 my-s3-bucket-2
+
+🔍 Listing RDS Databases...
+-------------------------------------------------
+|             DescribeDBInstances               |
++-------------------+-----------+---------------+
+| DBInstanceIdentifier | db1                    |
+| DBInstanceClass      | db.t2.micro            |
+| Engine               | mysql                  |
+| DBInstanceStatus     | available              |
+| Endpoint.Address     | db1.example.us-east-1.rds.amazonaws.com |
+-------------------------------------------------
+
+🔍 Listing IAM Users...
+-------------------------------------
+|            ListUsers              |
++-------------------+---------------+
+| UserName          | Alice         |
+| UserId            | AIDEXAMPLE123 |
+| CreateDate        | 2023-08-15    |
+-------------------------------------
+
+✅ AWS Resource Tracking Completed!
