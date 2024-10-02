@@ -65,10 +65,10 @@ To schedule the script to run at regular intervals, edit the crontab:
    * * * * * /home/ec2-user/aws-resource-tracker.sh >> /home/ec2-user/log/aws-resource-output.txt 2>&1
 
 ### Cron Job Breakdown:
- - * * * * *: Runs every minute.
- - /home/ec2-user/aws-resource-tracker.sh: Path to the script.
- - >> /home/ec2-user/log/aws-resource-output.txt: Appends output to a log file.
- - 2>&1: Redirects error messages to the same log file.
+ - '* * * * *': Runs every minute.
+ - '/home/ec2-user/aws-resource-tracker.sh': Path to the script.
+ - '>> /home/ec2-user/log/aws-resource-output.txt': Appends output to a log file.
+ - '2>&1': Redirects error messages to the same log file.
 
 ## IAM Role Configuration
 
