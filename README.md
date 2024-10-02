@@ -46,9 +46,9 @@ This project utilizes a shell script that runs in an AWS EC2 instance to list va
 
 The script performs the following tasks:
 
--Clear Output File: Clears any previous data.
--List EC2 Instances: Uses AWS CLI to fetch EC2 instance details.
--List S3 Buckets: Fetches available S3 buckets.
--List RDS Databases: Retrieves information about RDS databases.
--List IAM Users: Lists all IAM users.
+ - Clear Output File: Clears any previous data.
+ - List EC2 Instances: Uses AWS CLI to fetch EC2 instance details.
+ - List S3 Buckets: Fetches available S3 buckets.
+ - List RDS Databases: Retrieves information about RDS databases.
+ - List IAM Users: Lists all IAM users.
 Each section of the output is logged to a specified output file.
