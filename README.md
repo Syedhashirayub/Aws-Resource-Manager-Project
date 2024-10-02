@@ -34,9 +34,9 @@ This project utilizes a shell script that runs in an AWS EC2 instance to list va
    ```bash
    vim aws_resource_tracker.sh
    
-  -Press i to enter insert mode.
-  -Paste the script contents.
-  -Press Esc, then type :wq to save and exit.
+  - Press i to enter insert mode.
+  - Paste the script contents.
+  - Press Esc, then type :wq to save and exit.
   
 3. **Set Execute Permissions**:
    ```bash
